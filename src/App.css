@@ -1,0 +1,118 @@
+/* App.css */
+
+/* NowPlaying Component Styles */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 20px; /* Add space between the cards */
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Keep images inside the card */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+    .movie-card:hover {
+        transform: translateY(-5px); /* Add hover effect */
+    }
+
+    .movie-card img {
+        width: 100%; /* Make the image fill the card width */
+        height: 300px;
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    .movie-card h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .movie-card p {
+        font-size: 0.9rem;
+        color: #555;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .movie-rating {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f39c12; /* Choose a color that suits your design */
+    margin-top: 10px; /* Add space between description and rating */
+    text-align: center;
+}
+
+
+/* Loading Styles */
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+
+
+
+/////Original/////
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #36454F;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #15B097;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        nav a:hover {
+            background-color: #3DD6D0;
+            color: #fff;
+        }
+
+main {
+    flex: 1;
+    padding: 30px;
+    margin: 20px;
+    background-color: #36454F;
+}
+
+h1 {
+    color: #3DD6D0;
+    font-size: 2.5rem;
+}
+
+a {
+    color: #15B097;
+    font-weight: bold;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+

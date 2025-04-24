@@ -1,0 +1,6 @@
+const About = () => {
+    return <h1>About Page <p>Lorem ipsum dolor sit amet. Et ipsum maxime eum sint odit ut voluptas magnam. Sit nesciunt atque aut doloribus neque sed nisi rerum aut deleniti dolorem et mollitia nisi aut ipsum officia. Non iusto ducimus eos porro possimus et perspiciatis distinctio vel repudiandae aliquam. </p><p>Ea ducimus molestiae et provident sapiente cum dolores itaque quo atque galisum eos adipisci facere ut voluptatem dolores. Ab aliquam atque non consectetur quos est voluptatem repellendus eum consequatur necessitatibus ea perspiciatis voluptatem. Eos nulla corporis ut deserunt autem sit doloribus doloremque et incidunt tempore et magnam asperiores ut quidem alias! </p><p>Eum possimus nisi nam magnam officia aut beatae eaque aut voluptatum deserunt ad suscipit ipsam a quos voluptates. Sed aliquam exercitationem ut necessitatibus ratione ab facere illum. Eos Quis consequuntur et velit molestiae eum voluptatem inventore ea rerum beatae eum quaerat laborum qui dolorem temporibus. </p>
+</h1>;
+};
+
+export default About;
