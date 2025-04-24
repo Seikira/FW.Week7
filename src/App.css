@@ -1,10 +1,8 @@
-/* App.css */
 
-/* NowPlaying Component Styles */
 .movie-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
-    gap: 20px; /* Add space between the cards */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
 }
 
@@ -12,19 +10,19 @@
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden; /* Keep images inside the card */
+    overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
     .movie-card:hover {
-        transform: translateY(-5px); /* Add hover effect */
+        transform: translateY(-5px);
     }
 
     .movie-card img {
-        width: 100%; /* Make the image fill the card width */
+        width: 100%;
         height: 300px;
-        object-fit: cover; /* Maintain aspect ratio */
+        object-fit: cover;
     }
 
     .movie-card h3 {
@@ -44,13 +42,13 @@
     .movie-rating {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #f39c12; /* Choose a color that suits your design */
-    margin-top: 10px; /* Add space between description and rating */
+    color: #f39c12; 
+    margin-top: 10px; 
     text-align: center;
 }
 
 
-/* Loading Styles */
+
 .loading {
     text-align: center;
     font-size: 1.5rem;

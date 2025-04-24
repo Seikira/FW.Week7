@@ -5,7 +5,7 @@ const Reviews = () => {
     const [movies, setMovies] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
-    const API_KEY = '53efe64c5655b16c80e4dbe3f0e88e35'; // Replace with your actual API key
+    const API_KEY = '53efe64c5655b16c80e4dbe3f0e88e35';
 
     useEffect(() => {
         const fetchMovies = async () => {
@@ -15,7 +15,7 @@ const Reviews = () => {
                     throw new Error('Failed to fetch movies');
                 }
                 const data = await response.json();
-                setMovies(data.results); // Make sure this is an array and contains movies
+                setMovies(data.results);
                 setIsLoading(false);
             } catch (error) {
                 console.error("Error fetching movie data:", error);

@@ -4,27 +4,24 @@ const NowPlaying = () => {
     const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // API Key (replace this with your actual API key)
     const API_KEY = '53efe64c5655b16c80e4dbe3f0e88e35';
 
-    // Fetch movies data when the component mounts
     useEffect(() => {
         const fetchMovies = async () => {
             try {
                 const response = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=en-US&page=1`);
                 const data = await response.json();
-                setMovies(data.results);  // assuming 'results' is the array with movies
-                setLoading(false);  // stop the loading state
+                setMovies(data.results);
+                setLoading(false);
             } catch (error) {
                 console.log('Error fetching movies:', error);
-                setLoading(false);  // stop loading even on error
+                setLoading(false);
             }
         };
 
-        fetchMovies();  // Call the function to fetch movies
-    }, []);  // Empty array means it runs once on component mount
+        fetchMovies();
+    }, []);
 
-    // Conditional rendering to show a loading state or movies
     if (loading) {
         return <div>Loading...</div>;
     }
